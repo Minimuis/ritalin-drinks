@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Naamloos document</title>
+</head>
+<style>
+#current {
+    color: #fb9e01;
+}
+
+.button {
+    color: #b7b7b7;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    transition-duration: 500ms;
+    margin-top: 20px;
+       
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: #fb9e01;
+}
+
+input,
+textarea,
+label {
+    outline: 0;
+}
+
+#search {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#search input {
+    padding: 12px;
+    width: 200px;
+    height: 48px;
+    border-radius: 20px;
+}
+
+#search input[type="submit"] {
+    width: 55px;
+    height: 48px;
+    background: #333 url(img/search_icon_sprite.png) no-repeat top right;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.5;
+    color: #EEE;
+}
+
+#search input[type="submit"] + input {
+    background-position: top left;
+}
+
+#search input[type="submit"]:hover {
+    background-color: #0073f4;
+}
+
+#shortcuts-zone {
+    position: relative;
+    margin: 0 auto;
+    width: 452px;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    background-color: #282828;
+    border-bottom: solid 20px #474747;
+    
+}
+
+#footer {
+    
+    background-color: #3a3a3a;
+     border-style: solid;
+    background:#1F150C;
+    margin-bottom: -3%;
+    margin-top: 10%;
+    width: 102%;
+    margin-left: -1%;
+    color: white;
+}
+#footer p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -50%;}
+
+.logobanner img {
+    width: 250px;
+}
+
+.logobanner {
+    grid-column-end;
+}
+
+
+
+
+
+</style>
+<body>
+  <div class="grid1">
+            <div class="logobanner"><img src="../producten/img/logo.png"    alt="Logo"></div>s
+            <a id="current"href="../HTML/index.php" class="button">HOME</a>
+            <a  href="../producten/producten.php" class="button">PRODUCTEN</a>
+            <a href="../HTML/event.php" class="button">EVENTS</a>
+            <a href="artiesten.html" class="button">ARTIESTEN</a>
+            <a href="acties.html" class="button">ACTIES</a>
+            <div id="shortcuts-zone">
+                <form id="search">
+                    <input type="search" placeholder="Search..." />
+                    <input type="submit" value="Search" />
+                </form>
+            </div>
+
+        </div>
+
+
+
+</body>
+</html>
