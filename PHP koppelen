@@ -1,0 +1,39 @@
+    <?php
+
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "energy";
+
+$connie = mysqli_connect($host , $user, $pass, $db);
+
+if(!$connie){
+    die("niet goed");
+}
+
+
+$sql= "SELECT * FROM artiest";
+$result = mysqli_query($connie, $sql);
+
+if(!$result){
+    
+    echo"qeury niet goed";
+}
+
+
+$array = mysqli_fetch_row($result);
+
+//echo $array [3];
+
+
+
+mysqli_free_result($result);
+ 
+mysqli_close($connie);
+
+
+
+
+
+?>
+    
