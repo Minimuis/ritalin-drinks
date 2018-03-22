@@ -1,0 +1,55 @@
+<h1 id="title">Aanbieding v/d week</h1>
+     <h2 id="ondertitle">Elke week nieuwe aanbiedingen!</h2>
+     <div class="contentbox">
+     	<h5><i>Ritalin lemon drink edition</i></h5>
+     	<h1>6-PACK VOOR €5,04</h1>
+     	<div class="wrapper">
+			<p data-aos="fade-right">Ervaar nu zelf of met je vrienden de nieuwe smaak: lemon, van <i>Ritalin Drinks</i>.
+			FANTA ORANGE; Zoals je weet is het drinken van Ritalin lemon drink, dankzij zijn authentieke smaak, een unieke ervaring! Maar wat je misschien nog niet wist, is dat, wanneer je Ritalin lemon drinkt, je eigenlijk volop geniet van een drank met verse lemons* met natuurlijke aroma’s. Welcome to the fun, natuurlijk! *Uit sapconcentraat.
+			Koop nu èèn sixpack Ritalin lemon drinks met 30% korting!
+			<a href="#"><strong>Lees hier meer over al onze nieuwe producten</strong></a>.</p>
+			<img data-aos="fade-left" src="../img/6pack.png">
+			
+		</div>
+     </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+.contentbox p{
+	width: 35vw;
+	padding: 20px;
+	font-family: 'Patua One', cursive;
+}
+.contentbox h5 {
+	padding: 20px 0 0 20px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Patua One', cursive;
+}
+.contentbox h1 {
+	padding: 0 0 0 20px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Patua One', cursive;
+}
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper a {
+	color: black;
+}
+.contentbox img {
+	height: 40vh;
+	width: auto;
+	padding: 0 0 0 30px;
+	
+}
