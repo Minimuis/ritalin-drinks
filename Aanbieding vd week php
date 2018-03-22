@@ -1,0 +1,30 @@
+
+<?php
+	//stap 1 verbinding maken en checken
+	$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$db = "energy";
+	
+	$conn = mysqli_connect($host, $user, $pass, $db);
+	
+	if (!$conn) {
+		die("niet goed");
+	}
+	//stap 2 query uitvoeren en checken
+	$sql = "SELECT actienaam FROM actie WHERE einddatum > NOW() AND begindatum < NOW() LIMIT 1;";
+	$sql = "SELECT omschrijving FROM actie WHERE einddatum > now() AND begindatum < NOW() LIMIT 1;";
+	$result= mysqli_query($conn, $sql);
+	
+	if(!$result) {
+		echo "query niet goed";
+	}
+
+?>
+
+
+
+
+<h1><?php while($array = mysqli_fetch_row($result)){
+			echo $array[0];
+		}?></h1>
